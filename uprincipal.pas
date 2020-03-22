@@ -1,0 +1,58 @@
+unit uprincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmPrincipal = class(TForm)
+    edtRetornoPesquisa: TEdit;
+    Label1: TLabel;
+    btnCliente: TButton;
+    btnFornecedor: TButton;
+    procedure btnClienteClick(Sender: TObject);
+    procedure btnFornecedorClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+   uses upesquisa;
+
+{$R *.dfm}
+
+procedure TfrmPrincipal.btnClienteClick(Sender: TObject);
+begin
+   frmPesquisa := tfrmPesquisa.Create(self,['codigo','nome','telefone'],'cliente','nome');
+   try
+     if frmPesquisa.ShowModal = mrYes then
+        edtRetornoPesquisa.Text := frmPesquisa.edtRetorno.Text
+     else
+        edtRetornoPesquisa.Clear;
+   finally
+     FreeAndNil(frmPesquisa);
+   end;
+end;
+
+procedure TfrmPrincipal.btnFornecedorClick(Sender: TObject);
+begin
+   frmPesquisa := tfrmPesquisa.Create(self,['codigo','nome','endereco','numero'],'fornecedor','nome');
+   try
+     if frmPesquisa.ShowModal = mrYes then
+        edtRetornoPesquisa.Text := frmPesquisa.edtRetorno.Text
+     else
+        edtRetornoPesquisa.Clear;
+   finally
+     FreeAndNil(frmPesquisa);
+   end;
+
+end;
+
+end.

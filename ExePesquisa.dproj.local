@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/02/15 11:54:19.000.751,=C:\Users\dc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/02/15 13:25:34.000.387,=C:\Users\dc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/02/25 10:30:19.000.500,=C:\Users\dc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/02/25 10:31:23.000.266,C:\Users\dc\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Projetos\ExemploPesquisa\uprincipal.dfm</Transaction>
+    <Transaction>2020/02/25 10:31:23.000.266,C:\Users\dc\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Projetos\ExemploPesquisa\uprincipal.pas</Transaction>
+    <Transaction>2020/02/25 10:31:30.000.406,C:\Users\dc\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Projetos\ExemploPesquisa\ExePesquisa.dproj</Transaction>
+    <Transaction>2020/02/25 10:33:25.000.094,=C:\Projetos\ExemploPesquisa\Unit1.pas</Transaction>
+    <Transaction>2020/02/25 10:33:34.000.547,C:\Projetos\ExemploPesquisa\Unit1.pas=C:\Projetos\ExemploPesquisa\upesquisa.pas</Transaction>
+    <Transaction>2020/02/25 10:33:34.000.547,C:\Projetos\ExemploPesquisa\Unit1.dfm=C:\Projetos\ExemploPesquisa\upesquisa.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

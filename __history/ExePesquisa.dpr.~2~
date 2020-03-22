@@ -1,0 +1,16 @@
+program ExePesquisa;
+
+uses
+  Vcl.Forms,
+  uprincipal in 'uprincipal.pas' {frmPrincipal},
+  upesquisa in 'upesquisa.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
